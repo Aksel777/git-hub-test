@@ -1,0 +1,5 @@
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка выбором\task_0\obj\Debug\net6.0\task_0.csproj.AssemblyReference.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка выбором\task_0\obj\Debug\net6.0\task_0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка выбором\task_0\obj\Debug\net6.0\task_0.AssemblyInfoInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка выбором\task_0\obj\Debug\net6.0\task_0.AssemblyInfo.cs
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка выбором\task_0\obj\Debug\net6.0\task_0.csproj.CoreCompileInputs.cache

@@ -1,0 +1,15 @@
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.AssemblyInfoInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.AssemblyInfo.cs
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.csproj.CoreCompileInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.sourcelink.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\bin\Debug\net8.0\SERVER.exe
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\bin\Debug\net8.0\SERVER.deps.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\bin\Debug\net8.0\SERVER.runtimeconfig.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\bin\Debug\net8.0\SERVER.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\bin\Debug\net8.0\SERVER.pdb
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\refint\SERVER.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.pdb
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\SERVER.genruntimeconfig.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\CLIENT,SERVER\SERVER\obj\Debug\net8.0\ref\SERVER.dll
