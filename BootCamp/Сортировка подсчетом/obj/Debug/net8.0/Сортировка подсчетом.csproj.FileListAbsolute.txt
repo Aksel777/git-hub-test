@@ -1,0 +1,15 @@
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\bin\Debug\net8.0\Сортировка подсчетом.exe
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\bin\Debug\net8.0\Сортировка подсчетом.deps.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\bin\Debug\net8.0\Сортировка подсчетом.runtimeconfig.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\bin\Debug\net8.0\Сортировка подсчетом.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\bin\Debug\net8.0\Сортировка подсчетом.pdb
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.AssemblyInfoInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.AssemblyInfo.cs
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.csproj.CoreCompileInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.sourcelink.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\refint\Сортировка подсчетом.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.pdb
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\Сортировка подсчетом.genruntimeconfig.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Сортировка подсчетом\obj\Debug\net8.0\ref\Сортировка подсчетом.dll
