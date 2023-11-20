@@ -1,0 +1,15 @@
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\bin\Debug\net8.0\Гонка параллельных вычислений.exe
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\bin\Debug\net8.0\Гонка параллельных вычислений.deps.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\bin\Debug\net8.0\Гонка параллельных вычислений.runtimeconfig.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\bin\Debug\net8.0\Гонка параллельных вычислений.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\bin\Debug\net8.0\Гонка параллельных вычислений.pdb
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.AssemblyInfoInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.AssemblyInfo.cs
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.csproj.CoreCompileInputs.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.sourcelink.json
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\refint\Гонка параллельных вычислений.dll
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.pdb
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\Гонка параллельных вычислений.genruntimeconfig.cache
+C:\Users\aks\Desktop\GEEKBRAINS\BootCamp\Гонка параллельных вычислений\obj\Debug\net8.0\ref\Гонка параллельных вычислений.dll
