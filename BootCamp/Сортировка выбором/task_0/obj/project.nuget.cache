@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "wT27zgx+2EtFZSuCgVTgIRoRGUQnCmuJ0RwGLNcyZKMJzBD8EAMLbMTnTIFTfaU/OM/0MeMplVaSJrg7ZaB4xQ==",
+  "dgSpecHash": "dVPtFKfy1vVEkbxuXYW0vX468sPR+Y8fxNnUfSQ6yrGuMJGkhl8LcgBVeoBlNLxrG4oiaD4kaAzB2ZyaRTj6bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aks\\Desktop\\GEEKBRAINS\\BootCamp\\Сортировка выбором\\task_0\\task_0.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aks\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\aks\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\aks\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\aks\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,4 +1,4 @@
-﻿﻿const int THREADS_NUMBER = 4; //число потоков
+﻿const int THREADS_NUMBER = 4; //число потоков
 const int N = 100000; //размер массива
 object lock_object = new object();
 
@@ -42,7 +42,7 @@ void PrepareParallelCountingSort(int[] inputArray)
         threadsParall[i].Start();
     }
 
-    foreach(var thread in threadsParall)
+    foreach (var thread in threadsParall)
     {
         thread.Join();
     }
