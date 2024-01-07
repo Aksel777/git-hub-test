@@ -1,9 +1,20 @@
 from date_create import *
 
+def create_contact():
+    name = input_name()
+    surname = input_surname()
+    patronymic = input_patronymic()
+    phone = input_phone()
+    address = input_address()
+    
+    return f'{name} {surname} {patronymic} {phone}\n{address}\n\n'
+
 def add_contact(contact):
     # contact = create_contact()
     with open('phonebook.txt', 'a', encoding='UTF-8') as file:
         file.write(contact)
+
+
 def show_info():
     with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
         contacts_list = file.read().split('\n\n')    
