@@ -27,7 +27,18 @@
 #         сохранить даные в переменной          +++
 #         осуществить поиск по файлу
 #         вывести нужную инфу на экран
-# 5) Реализовать юзер интерфейс (UI):
+# 5) Удалить контакт:
+#         запросить информацию контакта
+#         открыть файл в режиме чтения(r)
+#         удалить контакт
+#         сохранить изменения
+# 6) Перенести контакт:
+#         запросить информацию контакта
+#         открыть файл в режиме чтения(r)
+#         открыть файл в режиме добавления (а) 
+#         перенести контакт
+#         сохранить изменения
+# 6) Реализовать юзер интерфейс (UI):
 #         вывести варианты меню                 +++
 #         получение запроса пользователя        +++
 #         реализация запроса пользователя       +++
@@ -60,17 +71,48 @@ def create_contact():
     return f'{name} {surname} {patronymic} {phone}\n{address}\n\n'
 
 def add_contact(contact):
-    # contact = create_contact()
+    contact = create_contact()
     with open('phonebook.txt', 'a', encoding='UTF-8') as file:
         file.write(contact)
+        
+def delete_contact():
+    with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
+        contacts_list = file.read().split('\n\n')
+    with open('phonebook.txt', 'w', encoding='UTF-8') as file: 
+        name = input('Введите контакт: ')
+    for contact in contacts_list:
+        if name in contact:
+            contacts_list.remove(contact)
+            print("Контакт удален.")
+        else:
+            print("Контакт не найден.")
+                
+    print(contacts_list)                
+# ############ В МОМЕНТЕ ПРОВЕРКИ КОДА нужные ЭЛЕМЕНТЫ УДАЛЯЕТ, НО,ПО ФАКТУ, УДАЛЯЕТ ВЕСЬ СПРАВОЧНИК 
 
-
+def transfer_contact():
+    with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
+        contacts_list = file.read().split('\n\n')
+    f_new = open('new.txt', 'a')
+    with open('new.txt', 'a', encoding='UTF-8') as f_new:
+        number = input('Введите номер строки для копирования: ')
+        for number in enumerate(contacts_list,1):
+            if number in contacts_list[:]:
+                f_new.write(contacts_list[number])
+                print('copy done')
+            else:
+                print('not find')
+    print(f_new)    
+        
+        
+        
 def show_info():
     with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
         contacts_list = file.read().split('\n\n')    
     #   print(file.read().rstrip()) 
         for nn,contact in enumerate(contacts_list,1):
-            print(nn, contact)         
+            print(nn, contact)   
+            print(type(contact))      
 def search_contact():
     var_search = input('Choice variant of search:\n '
                        '1. Name\n'
@@ -95,22 +137,27 @@ def search_contact():
         contact_lst = contact_str.replace('\n', ' ').split()
         if search in contact_lst[index_var]:
             print(contact_str)
+            
+
+    
 
 def interface():
     with open('phonebook.txt', 'a', encoding='UTF-8') as file:
         print(file)
         
     command = '-1'
-    while command != '4':
+    while command != '6':
         print('Возможные действия:\n'
             '1. Добавить контакт\n'
-            '2. Вывести на экран\n'
-            '3. Поиск контакта\n'
-            '4. Выход из программы')
+            '2. Удалить контакт\n'
+            '3. Копировать контакт\n'
+            '4. Вывести на экран\n'
+            '5. Поиск контакта\n'
+            '6. Выход из программы')
         
         command = input("enter dote of menue: ")
         
-        while command not in ('1', '2', '3', '4'):
+        while command not in ('1','2','3','4','5','6'):
             print("incorrect")
             command = input("enter dote of menue: ")
             
@@ -118,10 +165,14 @@ def interface():
             case '1':
                 add_contact(create_contact)
             case '2':
+                delete_contact()
+            case '3':  
+                transfer_contact()
+            case '4':  
                 show_info()
-            case '3':
+            case '5':
                 search_contact()
-            case '4':
+            case '6':
                 print("good bye!")      
                 
 interface()      
