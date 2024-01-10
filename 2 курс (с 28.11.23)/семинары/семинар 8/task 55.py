@@ -10,34 +10,34 @@
 ############# READ ME #############
 
 
-# 1) создать телефонный справочник:             +++
+# 1) создать телефонный справочник:             
 #         открыть файл в режиме добавления (а)  +++
-# 2) Добавить контакт:                          +++
+# 2) Добавить контакт:                          
 #         запросить информацию контакта         +++
 #         подготовить нужный формат записи      +++
 #         открыть файл в режиме добавления (а)  +++
 #         записать данные контакта              +++
-# 3) вывести данные на экран:                   +++
+# 3) вывести данные на экран:                   
 #         открыть файл в режим чтения           +++
 #         вывести на экран информацию(r)        +++
 # 4) Поиск данных:
-#         запросить критерий поиска             
+#         запросить критерий поиска             +++
 #         запросить данные поиска               +++
 #         открыть файл в режиме чтения(r)       +++
 #         сохранить даные в переменной          +++
-#         осуществить поиск по файлу
-#         вывести нужную инфу на экран
+#         осуществить поиск по файлу            +++
+#         вывести нужную инфу на экран          +++
 # 5) Удалить контакт:
-#         запросить информацию контакта
-#         открыть файл в режиме чтения(r)
-#         удалить контакт
-#         сохранить изменения
+#         запросить информацию контакта         +++
+#         открыть файл в режиме чтения(r)       +++
+#         удалить контакт                       +++
+#         сохранить изменения                   +++
 # 6) Перенести контакт:
-#         запросить информацию контакта
-#         открыть файл в режиме чтения(r)
-#         открыть файл в режиме добавления (а) 
-#         перенести контакт
-#         сохранить изменения
+#         запросить информацию контакта         +++
+#         открыть файл в режиме чтения(r)       +++
+#         открыть файл в режиме добавления (а)  +++
+#         перенести контакт                     +++
+#         сохранить изменения                   +++
 # 6) Реализовать юзер интерфейс (UI):
 #         вывести варианты меню                 +++
 #         получение запроса пользователя        +++
@@ -76,34 +76,68 @@ def add_contact(contact):
         file.write(contact)
         
 def delete_contact():
-    with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
+    with open('phonebook.txt', 'r', encoding='UTF-8') as file:
         contacts_list = file.read().split('\n\n')
-    with open('phonebook.txt', 'w', encoding='UTF-8') as file: 
-        name = input('Введите контакт: ')
+    name = input('Enter the contact name: ')
+    contact_found = False
     for contact in contacts_list:
         if name in contact:
             contacts_list.remove(contact)
-            print("Контакт удален.")
-        else:
-            print("Контакт не найден.")
-                
-    print(contacts_list)                
-# ############ В МОМЕНТЕ ПРОВЕРКИ КОДА нужные ЭЛЕМЕНТЫ УДАЛЯЕТ, НО,ПО ФАКТУ, УДАЛЯЕТ ВЕСЬ СПРАВОЧНИК 
+            contact_found = True
+            print("Contact deleted.")
+            break 
+    if not contact_found:
+        print("Contact not found.")
+    with open('phonebook.txt', 'w', encoding='UTF-8') as file:
+        file.write('\n\n'.join(contacts_list) + '\n\n')
+
+    print(contacts_list)
+        
+# def delete_contact():
+#     with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
+#         contacts_list = file.read().split('\n\n')
+#         name = input('Введите контакт: ')
+#         for contact in contacts_list:
+#             if name in contact:
+#                 contacts_list.remove(contact)
+#                 print("Контакт удален.")
+#                 return(contacts_list)
+#             else:
+#                 print("Контакт не найден.")
+                    
+#     with open('phonebook.txt', 'w', encoding='UTF-8') as file:
+#         for contact in contacts_list:
+#             file.write('\n'.join(contact) + '\n\n')
+#     print(contacts_list)                
 
 def transfer_contact():
-    with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
+    # with open('phonebook.txt', 'r', encoding='UTF-8') as file: 
+    #     contacts_list = file.read().split('\n\n')
+    # f_new = open('new.txt', 'a')
+    # with open('new.txt', 'a', encoding='UTF-8') as f_new:
+    #     number = input('Введите номер строки для копирования: ')
+    #     for number in enumerate(contacts_list,1):
+    #         if number in contacts_list[:]:
+    #             f_new.write(contacts_list[number])
+    #             print('copy done')
+    #         else:
+    #             print('not find')
+    # print(f_new)    
+    with open('phonebook.txt', 'r', encoding='UTF-8') as file:
         contacts_list = file.read().split('\n\n')
-    f_new = open('new.txt', 'a')
-    with open('new.txt', 'a', encoding='UTF-8') as f_new:
-        number = input('Введите номер строки для копирования: ')
-        for number in enumerate(contacts_list,1):
-            if number in contacts_list[:]:
-                f_new.write(contacts_list[number])
-                print('copy done')
-            else:
-                print('not find')
-    print(f_new)    
-        
+    try:
+        show_info()
+        number = int(input('Введите номер строки для копирования: '))
+    except ValueError:
+        print('Некорректный ввод. Введите целое число.')
+        return
+    if 1 <= number <= len(contacts_list):
+        with open('new.txt', 'a', encoding='UTF-8') as f_new:
+            f_new.write(contacts_list[number - 1])
+            f_new.write('\n')
+            print('Копирование завершено')
+    else:
+        print('Номер строки недействителен. Пожалуйста, введите корректный номер строки.')    
         
         
 def show_info():
@@ -137,9 +171,7 @@ def search_contact():
         contact_lst = contact_str.replace('\n', ' ').split()
         if search in contact_lst[index_var]:
             print(contact_str)
-            
-
-    
+               
 
 def interface():
     with open('phonebook.txt', 'a', encoding='UTF-8') as file:
